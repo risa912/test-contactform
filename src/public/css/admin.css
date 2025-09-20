@@ -1,0 +1,114 @@
+.admin__tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.header__inner {
+    position: relative;
+    /* 中央と右端を両立させるため */
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    text-align: center;
+    /* 中央寄せ */
+    border-bottom: 1px solid #e0dede;
+}
+
+.header__logo {
+    color: #8d857b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.header__button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 16px;
+    border: 2px solid #dfd9d1;
+    border-radius: 5px;
+    background: #f5f8f3;
+    color: #dfd9d1;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.admin__content {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+/* Registerの見出しを中央寄せ */
+.admin__heading {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #94867c;
+}
+.admin__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-form__item {
+    display: flex;
+    /* 入力フィールドを横並びに */
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.admin-form__item-input {
+    width: 200px;
+    padding: 10px
+}
+
+.admin-form__buttons {
+    display: flex;
+    /* ボタンを横並びに */
+    gap: 10px;
+}
+
+.search-form__button-submit {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background: #82766a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.reset-form__button-submit {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background: #dbc4b5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.detail-form__button-submit {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    color: #ded2cb;
+    cursor: pointer;
+}
+
+.btn-export {
+    color: #8a7c71;
+    background: #ede9e6;
+    border: none;
+    padding: 8px 10px;
+}
+
+.admin-table__row {
+    background: #8b7968;
+    color: #fbfaf4;
+
+}

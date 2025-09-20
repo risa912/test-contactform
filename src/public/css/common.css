@@ -1,0 +1,32 @@
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    text-align: center;
+    /* 中央寄せ */
+    border-bottom: 1px solid #e0dede;
+    /* ロゴ下に薄い線 */
+}
+
+.header__logo {
+    color: #8d857b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* login・register */
+.header__button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 16px;
+    border: 2px solid #dfd9d1;
+    border-radius: 5px;
+    background: #f5f8f3;
+    color: #dfd9d1;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
