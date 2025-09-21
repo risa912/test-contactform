@@ -47,9 +47,9 @@ php artisan db:seed
 ```
 
 ## 使用技術
-- Laravel 10.x
-- PHP 8.x
-- MySQL 8.x
+- Laravel 8.83.29
+- PHP 8.2.29
+- MySQL 11.8.3
 - Docker, Docker Compose
 
 ## ER図
