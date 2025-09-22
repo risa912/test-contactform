@@ -22,8 +22,8 @@
                 <div class="form__group-content">
                     <div class="form__input--name">
                         <div class="form__input--name">
-                            <input type="text" name="first_name" placeholder="例：山田" value="{{ old('first_name') }}">
-                            <input type="text" name="last_name" placeholder="例：太郎" class="name-input" value="{{ old('last_name') }}">
+                            <input type="text" name="last_name" placeholder="例：山田" value="{{ old('last_name') }}">
+                            <input type="text" name="first_name" placeholder="例：太郎" class="name-input" value="{{ old('first_name') }}">
                         </div>
                         <div class="form__error">
                             <span>
@@ -139,7 +139,7 @@
                     <select name="category_id">
                         <option value="" selected disabled>選択してください</option>
                         @foreach($categories as $category)
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        <option value="{{ $category->id }}">{{ $category->content }}</option>
                         @endforeach
                     </select>
                     <div class="form__error">

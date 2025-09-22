@@ -35,14 +35,14 @@ class ContactController extends Controller
         $contact['tel'] = "{$contact['tel1']}-{$contact['tel2']}-{$contact['tel3']}";
 
         // フルネーム作成
-        $contact['full_name'] = "{$contact['first_name']} {$contact['last_name']}";
+        $contact['full_name'] = "{$contact['last_name']} {$contact['first_name']}";
 
         // カテゴリー名取得
         $contact['category_label'] = '';
         if (!empty($contact['category_id'])) {
             $category = \App\Models\Category::find($contact['category_id']);
             if ($category) {
-                $contact['category_label'] = $category->name;
+                $contact['category_label'] = $category->content;
             }
         }
 

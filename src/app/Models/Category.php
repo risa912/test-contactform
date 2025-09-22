@@ -9,5 +9,5 @@ class Category extends Model
 {
     use HasFactory;
     // 複数代入可能なカラムを指定
-     protected $fillable = ['name'];
+     protected $fillable = ['content'];
 }
