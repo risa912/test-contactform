@@ -20,7 +20,7 @@ class CreateContactsTable extends Migration
             $table->string('last_name');  // デフォルト255文字
             $table->tinyInteger('gender'); 
             $table->string('email');      // デフォルト255文字
-            $table->string('tel');        // デフォルト255文字
+            $table->string('tell');        // デフォルト255文字
             $table->string('address');    // デフォルト255文字
             $table->string('building')->nullable(); 
             $table->text('detail');

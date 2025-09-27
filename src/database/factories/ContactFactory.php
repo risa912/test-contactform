@@ -14,16 +14,14 @@ class ContactFactory extends Factory
     {
         return [
             'category_id' => Category::inRandomOrder()->first()->id, // ランダムなカテゴリ
-            'first_name'  => $this->faker->firstName,
-            'last_name'   => $this->faker->lastName,
-            'gender'      => $this->faker->numberBetween(1, 3), // 1:男性, 2:女性, 3:その他
-            'email'       => $this->faker->unique()->safeEmail,
-            'tel'         => $this->faker->numerify('0#########'), // 例: 08012345678
-            'address'     => $this->faker->address,
+            'first_name'  => $this->faker->lastName(),
+            'last_name'   => $this->faker->firstName(),
+            'gender'      => $this->faker->randomElement(1, 2, 3), // 1:男性, 2:女性, 3:その他
+            'email' => $this->faker->safeEmail(),
+            'tel'         => $this->faker->phoneNumber(), 
+            'address' => $this->faker->city() . $this->faker->streetAddress(), // 市区町村 + 番地
             'building'    => $this->faker->optional()->secondaryAddress,
-            'detail'      => $this->faker->paragraph,
-            'created_at'  => now(),
-            'updated_at'  => now(),
+            'detail' => $this->faker->text(120),
         ];
     }
 }

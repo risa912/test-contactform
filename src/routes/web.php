@@ -36,7 +36,5 @@ Route::middleware('auth')->group(function () {
    Route::get('/admin', function () {
         return view('admin');
     })->name('admin');
-
-// ログアウト
- Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 }); 
+

@@ -44,8 +44,8 @@
                 <tr class="confirm-table__row">
                     <th class="confirm-table__header">電話番号</th>
                     <td class="confirm-table__text">
-                        {{ $contact['tel'] }}
-                        <input type="hidden" name="tel" value="{{ $contact['tel'] }}">
+                        {{ $contact['tell'] }}
+                        <input type="hidden" name="tell" value="{{ $contact['tell'] }}">
                     </td>
                 </tr>
                 <tr class="confirm-table__row">
